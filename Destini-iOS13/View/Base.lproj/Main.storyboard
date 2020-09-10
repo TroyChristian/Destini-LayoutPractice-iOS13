@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Story View Controller-->
         <scene sceneID="gFG-iF-SNF">
             <objects>
-                <viewController id="yEj-hh-1bW" sceneMemberID="viewController">
+                <viewController id="yEj-hh-1bW" customClass="StoryViewController" customModule="Destini_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LNk-fa-QeM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,12 +31,18 @@
                                                 <state key="normal" title="BUTTON" backgroundImage="choice1Background">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="choiceButtonTapped:" destination="yEj-hh-1bW" eventType="touchUpInside" id="AMp-ky-Xne"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUI-At-KNR">
                                                 <rect key="frame" x="0.0" y="92.5" width="374" height="85.5"/>
                                                 <state key="normal" title="BUTTON2" backgroundImage="choice2Background">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="choiceButtonTapped:" destination="yEj-hh-1bW" eventType="touchUpInside" id="gT0-Rf-xIb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -68,6 +74,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CRi-fW-ZgF"/>
                     </view>
+                    <connections>
+                        <outlet property="choice1Button" destination="F75-eA-uNX" id="YOL-Vp-18C"/>
+                        <outlet property="choice2Button" destination="NUI-At-KNR" id="ZLN-mk-m6z"/>
+                        <outlet property="storyLabel" destination="u0e-9u-1an" id="hmn-G5-6dN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ExO-hZ-Jvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
