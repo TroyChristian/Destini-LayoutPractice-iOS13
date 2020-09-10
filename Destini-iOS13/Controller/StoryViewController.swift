@@ -10,6 +10,9 @@ import UIKit
 
 class StoryViewController: UIViewController {
     
+    //MARK: - Variables
+   var storyBrain = StoryBrain()
+    
     @IBOutlet weak var storyLabel: UILabel!
     
     
@@ -23,6 +26,7 @@ class StoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        storyLabel.text = storyBrain.stories[0].title
 
     }
 

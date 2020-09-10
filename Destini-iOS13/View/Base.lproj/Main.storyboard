@@ -20,6 +20,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M14-K3-21Y">
+                                <rect key="frame" x="0.0" y="44" width="414" height="612"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0e-9u-1an">
+                                        <rect key="frame" x="20" y="6" width="374" height="600"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="u0e-9u-1an" firstAttribute="centerX" secondItem="M14-K3-21Y" secondAttribute="centerX" id="MHn-LK-FFq"/>
+                                    <constraint firstItem="u0e-9u-1an" firstAttribute="centerY" secondItem="M14-K3-21Y" secondAttribute="centerY" id="Sed-nP-Eq7"/>
+                                    <constraint firstItem="u0e-9u-1an" firstAttribute="top" secondItem="M14-K3-21Y" secondAttribute="top" constant="6" id="cQ6-6f-X0b"/>
+                                    <constraint firstItem="u0e-9u-1an" firstAttribute="leading" secondItem="M14-K3-21Y" secondAttribute="leading" constant="20" id="zfj-ce-Qii"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUt-cr-tYv">
                                 <rect key="frame" x="20" y="656" width="374" height="178"/>
                                 <subviews>
@@ -55,20 +73,15 @@
                                     <constraint firstItem="DRg-cY-qlq" firstAttribute="leading" secondItem="UUt-cr-tYv" secondAttribute="leading" id="jHq-8x-h9D"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0e-9u-1an">
-                                <rect key="frame" x="20" y="94" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="u0e-9u-1an" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CRi-fW-ZgF" secondAttribute="leading" id="AOg-ai-EXn"/>
-                            <constraint firstItem="u0e-9u-1an" firstAttribute="top" secondItem="CRi-fW-ZgF" secondAttribute="top" constant="50" id="FE3-jt-dqu"/>
-                            <constraint firstItem="CRi-fW-ZgF" firstAttribute="trailing" secondItem="u0e-9u-1an" secondAttribute="trailing" constant="352" id="ftU-J2-iez"/>
+                            <constraint firstItem="M14-K3-21Y" firstAttribute="trailing" secondItem="CRi-fW-ZgF" secondAttribute="trailing" id="F4i-jE-Rmn"/>
+                            <constraint firstItem="UUt-cr-tYv" firstAttribute="top" secondItem="M14-K3-21Y" secondAttribute="bottom" id="HdR-mJ-mnh"/>
+                            <constraint firstItem="M14-K3-21Y" firstAttribute="leading" secondItem="CRi-fW-ZgF" secondAttribute="leading" id="jJI-p0-ftJ"/>
                             <constraint firstItem="UUt-cr-tYv" firstAttribute="top" secondItem="CRi-fW-ZgF" secondAttribute="top" constant="612" id="jd1-AW-81i"/>
                             <constraint firstItem="CRi-fW-ZgF" firstAttribute="bottom" secondItem="UUt-cr-tYv" secondAttribute="bottom" constant="28" id="tuq-YI-EXS"/>
+                            <constraint firstItem="M14-K3-21Y" firstAttribute="top" secondItem="CRi-fW-ZgF" secondAttribute="top" id="xt2-1q-L40"/>
                             <constraint firstItem="CRi-fW-ZgF" firstAttribute="trailing" secondItem="UUt-cr-tYv" secondAttribute="trailing" constant="20" id="zUv-7o-UIA"/>
                             <constraint firstItem="UUt-cr-tYv" firstAttribute="leading" secondItem="CRi-fW-ZgF" secondAttribute="leading" constant="20" id="zbJ-HE-sFO"/>
                         </constraints>
